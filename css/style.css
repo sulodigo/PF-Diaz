@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap');
+
+/* Selector universal */
+*{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+/*font size 62.5*/
+/*rem --- 16 px aprox*/
+/*1 rem --- 10px*/
+
+html{
+    font-size: 62.5%;
+}
+
+/* Selectores de etiqueta */
+
+body{
+    background-image: url(../img/background/background_musica1.webp);
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+h1{    
+    color: rgb(0, 0, 139);
+    background-color: rgba(198, 214, 230, 0.9);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-left: 8px;
+    border-top: double rgb(156, 7, 69) 4px;
+    margin-top: 10px;
+    margin-left: 16px;
+    margin-right: 16px;
+    padding-bottom: 10px;
+}
+
+h2{
+    color: rgb(156, 7, 69);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+p{
+    text-align: center;
+    color: rgb(0, 0, 139);
+    background-color: rgba(198, 214, 230, 0.9);
+    background-size: 100%;
+    font-weight: 200;
+    font-size: 2rem;    
+    padding-bottom: 10px;
+    padding-left: 8px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* Flexbox */
+
+nav{
+    height: 10vh;
+    background-color: rgba(198, 214, 230, 0.9);
+    margin: 0px;
+    background-size: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    nav ul{
+        list-style: none;
+        display: flex;
+    }
+
+        nav ul li{
+            margin-right: 20px;
+        }
+
+        nav ul li a{
+            color: rgb(156, 7, 69);
+            text-decoration: underline;
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+        }
+    
+        a:hover{
+            color: rgb(0, 0, 139);
+        }
+
+
+/* Object fit cover pantalla "Galería" */ 
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Grid pantalla "Galería" */ 
+ 
+.foto1{
+    grid-area: foto1;
+}
+ 
+.foto2{
+   grid-area: foto2;
+}
+ 
+.foto3{
+    grid-area: foto3;
+}
+ 
+.foto4{
+    grid-area: foto4;
+}
+ 
+.foto5{
+    grid-area: foto5;
+}
+ 
+.foto6{
+    grid-area: foto6;
+}
+ 
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,300px);
+    gap: 3px;
+    margin-bottom: 0px;
+    grid-template-areas: 
+    "foto1" 
+    "foto2"
+    "foto3"
+    "foto4" 
+    "foto5"
+    "foto6";
+}
+
+/* Grid pantalla "Galería" Responsive 600 */
+
+@media (min-width:600px){
+    #galeria{
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: repeat(4,180px);
+        grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto1 foto2 foto3"
+        "foto1 foto4 foto6"
+        "foto5 foto5 foto6";
+    }
+}
+
+/* Grid pantalla "Galería" Responsive 1200 */
+
+@media (min-width:1200px){
+    #galeria{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(3,30vh);
+        grid-template-areas: 
+        "foto6 foto3 foto4"
+        "foto6 foto5 foto4" 
+        "foto1 foto1 foto2";
+    }
+    main img{
+         filter: grayscale(0.9);
+    }
+    main img:hover{
+         filter: none;
+         transition: filter 2s;
+    }
+}
+ 
+/* Formulario */
+
+form{
+    text-align: center;
+    color: rgb(156, 7, 69);
+    background-color: rgb(255, 255, 255);
+    border-top: dotted rgb(156, 7, 69) 2px;
+    font-size: 2rem;
+}
+
+form input{
+    text-align: center;
+    color: rgb(156, 7, 69);
+    background-color: rgba(198, 214, 230, 0.9);
+    margin: auto;
+    width: 8%;
+    height: 5%;
+} 
+
+/* Selectores clase camelCase */
+
+.textNave{
+    color: rgb(156, 7, 69);
+    background-color: rgba(198, 214, 230, 0.9);
+    text-align: center;
+    padding-bottom: 10px;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-shadow: 1px 3px rgb(255, 255, 255);
+}
+
+.fontStyle{
+    font-style: italic;
+}
+
+/* Animación WOW pantalla "Tour" */
+
+.tour2023{
+    text-align: center;
+    margin: 25px;
+}
+
+.tour2023 p:hover{
+    font-size: 2.1rem;
+}
+.tour2023 p span:hover{
+    color: rgb(156, 7, 69);
+    background-color: rgb(255, 255, 255);
+}
+
+/* Footer con selector de etiquetas */
+
+.textRedesSociales{
+    color: rgb(156, 7, 69);
+    background-color:rgba(198, 214, 230, 0.9);
+    font-size:1.2rem;
+    text-align: right;
+    margin-right: none;
+    margin-top: 8px;
+    padding-right: none;
+    margin-bottom: none;
+    border: 1.8px;
+    border-style: dashed;
+}
+
+.pieIconSm{
+    width: 20px;
+    text-align: right;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+/* Selectores de ID */
+
+#imagenPequeña{
+    width: 38%;
+    height: 30%;
+    transform: rotate(15deg);
+    margin-left: 6px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+#encabezadoImg{
+    width: 100%;
+}
+
+#video{
+    text-align: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+/* Flexbox pantalla "Bio" */
+
+#biografia .tarjaFotos{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 6px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#biografia .tarjaFotos figure figcaption{
+    color: rgb(0, 0, 139);
+    background-color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0px;
+}
+
+/* Animación opcional pantalla "index", botones formulario */
+
+#newsletter .boton{
+    border-radius: 6px;
+    border: none;
+    margin: 10px;
+    width: 100px;
+    height: 30px;
+    color: rgb(156, 7, 69);
+    background: linear-gradient(to bottom, rgb(237, 237, 248), rgb(167, 167, 218));
+    font-weight: bold;
+    font-size: 1,5rem;    
+}
+
+#newsletter .boton:hover{
+	cursor: pointer; cursor: hand;
+	background: linear-gradient(to top, rgb(191, 191, 250), rgb(237, 237, 248));
+	transition: all 10s;
+}
+
+
+/* Animación footer con @keyframe */
+
+@keyframes textAnimacion{
+    from {
+        margin-right:70%;
+      }
+    to {
+       margin-right:0%;
+     }
+}
+
+.animate{ 
+animation-name: textAnimacion;
+background: fixed;
+text-align:right;
+position: relative;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+}
+
+/* Grid pantalla "Discos"*/ 
+
+/* object fit cover pantalla "Discos" */ 
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.MWS_{
+    grid-area: MWS_;
+}
+ 
+.WALB{
+   grid-area: WALB;
+}
+ 
+.CITD{
+    grid-area: CITD;
+}
+ 
+.TBV{
+    grid-area: TBV;
+}
+ 
+.TSS{
+    grid-area: TSS;
+}
+ 
+.ITR{
+    grid-area: ITR;
+}
+
+.A1{
+    grid-area: A1;
+}
+
+.LP{
+    grid-area: LP;
+}
+
+.A2{
+    grid-area: A2;
+}
+
+#discos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    margin-bottom: -60px;
+    grid-template-rows: repeat(9,300px);
+    grid-template-areas: 
+    "MWS_" 
+    "WALB"
+    "CITD"
+    "TBV" 
+    "TSS"
+    "ITR"
+    "A1"
+    "LP"
+    "A2";
+}
+
+/* Grid pantalla "Discos" Responsive 600 */
+
+@media (min-width:600px){
+    #discos{
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: repeat(5, 8vw);
+        margin-bottom: -60px;
+        grid-template-areas: 
+        "MWS_ TBV ITR"
+        "WALB TBV ITR"
+        "WALB TSS ITR"
+        "CITD TSS ITR"
+        "A1 LP A2";
+    }
+}
+
+/* Grid pantalla "Discos" Responsive 1200 */
+
+@media (min-width:1200px){
+    #discos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4,20vw);
+        grid-template-areas: 
+        "MWS_ TBV ITR"
+        "WALB TSS ITR" 
+        "CITD TSS ITR"
+        "A1 LP A2";
+    }
+
+    main img{
+         filter: grayscale(0.9);
+    }
+    main img:hover{
+         filter: none;
+         transition: filter 4s;
+    }
+}
