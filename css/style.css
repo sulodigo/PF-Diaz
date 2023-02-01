@@ -147,6 +147,9 @@ main img{
 /* Grid pantalla "Galería" Responsive 600 */
 
 @media (min-width:600px){
+    #botonera{
+        width: 100px
+    }
     #galeria{
         grid-template-columns: 2fr 2fr 2fr;
         grid-template-rows: repeat(4,180px);
@@ -251,6 +254,10 @@ form input{
     margin-top: 8px;
     margin-right: 8px;
     margin-bottom: 10px;
+}
+
+.nav-link{
+    display: block;
 }
 
 /* Selectores de ID */
