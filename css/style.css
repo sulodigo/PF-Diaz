@@ -55,47 +55,45 @@ p{
     background-size: 100%;
     font-weight: 200;
     font-size: 2rem;    
-    padding-bottom: 10px;
     padding-left: 8px;
     margin-left: 16px;
     margin-right: 16px;
 }
 
-/* Flexbox */
+/* Bootstrap */
 
-nav{
+#botonera{
     height: 10vh;
     background-color: rgba(198, 214, 230, 0.9);
     margin: 0px;
-    background-size: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 }
 
-    nav ul{
-        list-style: none;
-        display: flex;
-    }
+#botonera img{
+    width: 150px;
+}
 
-        nav ul li{
-            margin-right: 20px;
-        }
+#botonera ul{
+    list-style: none;
+    display: flex;
+}
 
-        nav ul li a{
-            color: rgb(156, 7, 69);
-            text-decoration: underline;
-            font-size: 1.8rem;
-            font-weight: 800;
-            margin-bottom: 0px;
-            padding-bottom: 0px;
-        }
-    
-        a:hover{
-            color: rgb(0, 0, 139);
-        }
+#botonrta ul li{
+    margin-right: 20px;
+}
 
+#botonera ul li a{
+    color: rgb(156, 7, 69);
+    text-decoration: underline;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#botonera ul li a:hover{
+    color: rgb(0, 0, 139);
+}
 
 /* Object fit cover pantalla "Galería" */ 
 
@@ -209,6 +207,8 @@ form input{
     font-style: italic;
     font-size: 1.5rem;
     text-shadow: 1px 3px rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
 }
 
 .fontStyle{
