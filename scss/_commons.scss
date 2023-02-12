@@ -1,0 +1,222 @@
+html{
+    font-size: 62.5%;
+}
+
+*{
+    font-family: $mainFonts;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $variantColorB;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-size: cover;
+} 
+
+h1{
+    font-size: $textXxl;
+    color: $secondaryColor;
+    font-weight: 600;
+    text-align: $textCenter;
+    background-color: $backGroundColor;
+    padding-left: 8px;
+    border-top: double rgb(156, 7, 69) 4px;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+h2{
+    font-size: $textLg;
+    color: $mainColor;
+    font-weight: $textBold;
+    text-align: $textCenter;
+    background-color: $backGroundColor;
+}
+
+h4{
+    font-size: $textXs;
+    color: $mainColor;
+    font-weight: $textLighter;
+    text-align: $textRight;
+    background-color: $backGroundColor;
+    font-family: $mainFonts;
+    line-height: normal;
+}
+
+p{
+    font-size: $textSm;
+    color: $secondaryColor;
+    font-weight: $textLight;
+    text-align: $textCenter;
+    background-color: $backGroundColor;
+    background-size: 100%;  
+    padding-left: 0px;
+    margin: 35px;
+    margin-bottom: 12px;
+}
+
+.encabezadoImg{
+    width: 100%;
+    height: auto;
+}
+
+.textNave{
+    color: $mainColor;
+    text-align: $textCenter;
+    font-style: $textItalic;
+    font-size: $textXs;
+    margin-top: 20px;
+    padding-bottom: 10px;
+    text-shadow: 1px 3px $thirdColor;
+}
+
+.textRedesSociales{
+    color: $mainColor;
+    background-color:$backGroundColor;
+    font-size: $textSm;
+    text-align: $textRight;
+    margin-right: none;
+    margin-top: 8px;
+    padding-right: none;
+    margin-bottom: none;
+    border: 1.8px;
+    border-style: dashed;
+    vertical-align: none;
+}
+
+.pieIconSm{
+    width: 20px;
+    text-align: $textRight;
+    background-color: $backGroundColor;
+    margin-top: 8px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+
+@keyframes textAnimacion{
+    from {
+        margin-right:70%;
+      }
+    to {
+       margin-right:0%;
+     }
+}
+
+.animate{ 
+animation-name: textAnimacion;
+background: fixed;
+text-align: $textRight;
+position: relative;
+animation-duration: 5s;
+animation-timing-function: ease-in-out;
+}
+
+#firma{
+    width: 25%;
+    height: 20%;
+    transform: rotate(15deg);
+    margin-left: 0px;
+    margin-right: 40px;
+}
+
+#video{
+    text-align: $textCenter;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    margin: 35px;
+}
+
+#newsletter .boton{
+    width: 100px;
+    height: 30px;
+    border-radius: 6px;
+    margin: 10px;
+    color: $mainColor;
+    background: linear-gradient(to bottom, $variantColorB, $variantColorA);
+    font-weight: $textBold;
+    font-size: $textSm;
+    border:none;
+}
+
+//nesting - anidacion 
+
+#botonera{
+    height: 10vh;
+    color: $mainColor;
+    text-decoration: underline;
+    font-size: $textSm;
+    font-weight: $textBold;
+    font-family: $mainFonts;
+    margin-right: 0px;
+    background-color: $backGroundColor;
+    ul{
+        list-style: none;
+        display: $d-flex;
+        li{
+            margin-right: 20px;
+            a{
+                color: $mainColor;
+                text-decoration: underline;
+                font-size: $textMd;
+                font-weight: $textBolder;
+                font-family: $mainFonts;
+                &:hover{
+                    color: $secondaryColor;
+                } 
+            }
+        }
+    }
+}
+
+form{
+    text-align: $textCenter;
+    color: $mainColor;
+    background-color: $thirdColor;
+    border-top: dotted $mainColor 2px;
+    font-size: $textMd;
+    font-family: $mainFonts;
+    font-weight: $textRegular;
+    margin-top: 10px;
+    input{
+        text-align: center;
+        color: $mainColor;
+        background-color: $backGroundColor;
+        margin: auto;
+        width: 8%;
+        height: 5%;
+    }
+}
+
+.tour2023{
+    text-align: $textCenter;
+    margin: 35px;
+    font-family: $mainFonts;
+    font-size: $textXxl;
+    font-weight: $textBold;
+    background-color: $backGroundColor;
+        p:hover{
+            font-size: $textLg;
+            font-family: $mainFonts;
+            font-weight: $textLight;
+    }
+        p span:hover{
+            color: $mainColor;
+            background-color: $thirdColor;
+            font-family: $mainFonts;
+            font-size: $textLg;
+        }
+}
+
+
+
+
+
+
+

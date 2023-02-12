@@ -1,0 +1,184 @@
+//Discos
+
+//Object fit cover pantalla "Discos"// 
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+ 
+.MWS_{
+    grid-area: MWS_;
+}
+ 
+.WALB{
+   grid-area: WALB;
+}
+ 
+.CITD{
+    grid-area: CITD;
+}
+ 
+.TBV{
+    grid-area: TBV;
+}
+ 
+.TSS{
+    grid-area: TSS;
+}
+ 
+.ITR{
+    grid-area: ITR;
+}
+
+.A1{
+    grid-area: A1;
+}
+
+.LP{
+    grid-area: LP;
+}
+
+.A2{
+    grid-area: A2;
+}
+
+#discos{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3px;
+    grid-template-rows: repeat(9,300px);
+    grid-template-areas: 
+    "MWS_" 
+    "WALB"
+    "CITD"
+    "TBV" 
+    "TSS"
+    "ITR"
+    "A1"
+    "LP"
+    "A2";
+}
+
+//Grid pantalla "Discos" Responsive 600//
+
+@media (min-width:600px){
+    #discos{
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: repeat(5, 8vw);
+        margin-bottom: -60px;
+        grid-template-areas: 
+        "MWS_ TBV ITR"
+        "WALB TBV ITR"
+        "WALB TSS ITR"
+        "CITD TSS ITR"
+        "A1 LP A2";
+    }
+}
+
+//Grid pantalla "Discos" Responsive 1200//
+
+@media (min-width:1200px){
+    #discos{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(4,20vw);
+        grid-template-areas: 
+        "MWS_ TBV ITR"
+        "WALB TSS ITR" 
+        "CITD TSS ITR"
+        "A1 LP A2";
+    }
+
+    main img{
+         filter: grayscale(0.9);
+        }
+            :hover{
+                filter: none;
+                transition: filter 4s;
+            } 
+}
+
+//Galería
+
+//Object fit cover pantalla "Galería"// 
+
+main img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+//Grid pantalla "Galería"// 
+ 
+.foto1{
+    grid-area: foto1;
+}
+ 
+.foto2{
+   grid-area: foto2;
+}
+ 
+.foto3{
+    grid-area: foto3;
+}
+ 
+.foto4{
+    grid-area: foto4;
+}
+ 
+.foto5{
+    grid-area: foto5;
+}
+ 
+.foto6{
+    grid-area: foto6;
+}
+ 
+#galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6,300px);
+    gap: 3px;
+    grid-template-areas: 
+    "foto1" 
+    "foto2"
+    "foto3"
+    "foto4" 
+    "foto5"
+    "foto6";
+}
+
+//Grid pantalla "Galería" Responsive 600//
+
+@media (min-width:600px){
+    #galeria{
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-template-rows: repeat(4,180px);
+        grid-template-areas: 
+        "foto1 foto2 foto3"
+        "foto1 foto2 foto3"
+        "foto1 foto4 foto6"
+        "foto5 foto5 foto6";
+    }
+}
+
+//Grid pantalla "Galería" Responsive 1200//
+
+@media (min-width:1200px){
+    #galeria{
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: repeat(3,30vh);
+        grid-template-areas: 
+        "foto6 foto3 foto4"
+        "foto6 foto5 foto4" 
+        "foto1 foto1 foto2";
+    }
+    main img{
+        filter: grayscale(0.9);
+        }
+            :hover{
+                filter: none;
+                transition: filter 8s;
+            }
+}

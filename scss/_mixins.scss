@@ -1,0 +1,49 @@
+//extends
+
+.navbar-toggler{
+    color: $secondaryColor;
+    background-color: $backGroundColor;
+    margin-bottom: 3px;
+    border: double rgb(156, 7, 69) 3px;
+}
+
+.navbar-toggler-icon{
+    @extend .navbar-toggler;
+    border: dashed rgb(0, 0, 139) 1.5px;;
+}
+
+//mixins
+@mixin flex($direction,$wrap,$justify){
+    display: flex;
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+    justify-content: $justify;
+}
+
+#biografia .tarjaFotos{
+    @include flex(row,nowrap,space-evenly);
+    gap: 6px;
+    margin-left: 30px;
+    margin-right: 30px;
+    figure figcaption{
+            color: $secondaryColor;
+            background-color: $thirdColor;
+            font-size: $textMd;
+            font-weight: $textBolder;
+            text-align: $textCenter;
+            margin-top: 0px;
+            }
+}
+
+@mixin movil ($medida: 600px){
+    @media ($medida){
+        @content;
+       } 
+}
+
+@mixin desktop ($medida: 1200px){
+    @media ($medida){
+        @content;
+    }
+}
+
