@@ -1,7 +1,7 @@
 {
   "name": "PreEntrega3-Diaz",
   "version": "1.0.0",
-  "description": "Flexbox + Grid + @keyframes + @media + animaciones WOW y Fresco + Bootstrap",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "sass": "sass",
