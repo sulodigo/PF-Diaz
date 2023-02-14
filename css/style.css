@@ -10786,7 +10786,6 @@ body {
   background-repeat: repeat;
   background-attachment: fixed;
   background-size: cover;
-  text-align: center;
 }
 
 h1, .h1 {
@@ -10896,6 +10895,12 @@ p {
   text-align: center;
 }
 
+#video {
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
 #newsletter .boton {
   width: 100px;
   height: 30px;
@@ -10937,29 +10942,6 @@ p {
 }
 #botonera ul li a:hover {
   color: rgb(0, 0, 139);
-}
-
-.delimitador {
-  width: 560px; /* Ancho máximo */
-  margin: center; /* Centramos el vídeo */
-}
-
-/* El contenedor con el padding-top crea el tamaño del vídeo */
-.contenedor {
-  height: 0px;
-  width: 100%;
-  padding-top: 5.25%; /* Relación: 16/9 = 56.25% */
-  margin-bottom: 28px;
-  position: relative;
-}
-
-/* El iframe se adapta al tamaño del contenedor */
-.contenedor iframe {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0px;
-  left: 0px;
 }
 
 form {
