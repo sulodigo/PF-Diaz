@@ -677,7 +677,7 @@ p {
   text-align: center;
   font-style: italic;
   font-size: 1.2rem;
-  margin-top: 20px;
+  margin-top: 6px;
   padding-bottom: 10px;
   text-shadow: 1px 3px rgb(255, 255, 255);
 }
@@ -726,8 +726,8 @@ p {
   width: 25%;
   height: 20%;
   transform: rotate(15deg);
-  margin-left: 0px;
-  margin-right: 40px;
+  margin-left: 80px;
+  text-align: center;
 }
 
 #newsletter .boton {
