@@ -67,12 +67,16 @@ p{
     height: auto;
 }
 
+// .navbar-brand{
+//     text-align: left;
+// }
+
 .textNave{
     color: $mainColor;
     text-align: $textCenter;
     font-style: $textItalic;
     font-size: $textXs;
-    margin-top: 20px;
+    margin-top: 6px;
     padding-bottom: 10px;
     text-shadow: 1px 3px $thirdColor;
 }
@@ -123,8 +127,8 @@ animation-timing-function: ease-in-out;
     width: 25%;
     height: 20%;
     transform: rotate(15deg);
-    margin-left: 0px;
-    margin-right: 40px;
+    margin-left: 80px;
+    text-align: center;
 }
 
 
