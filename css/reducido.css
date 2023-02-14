@@ -817,14 +817,6 @@ form input {
   border: dashed rgb(0, 0, 139) 1.5px;
 }
 
-#video {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  gap: 6px;
-}
-
 main img {
   width: 100%;
   height: 100%;
