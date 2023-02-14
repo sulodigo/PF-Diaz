@@ -10892,7 +10892,7 @@ p {
   height: 20%;
   transform: rotate(15deg);
   margin-left: 80px;
-  text-align: center;
+  text-align: left;
 }
 
 #newsletter .boton {
@@ -10925,7 +10925,7 @@ p {
   margin-right: 20px;
   background-color: rgba(198, 214, 230, 0.9);
   width: 20%;
-  height: 15%;
+  height: 20%;
 }
 #botonera ul li a {
   color: rgb(156, 7, 69);
@@ -10939,10 +10939,10 @@ p {
 }
 
 #video {
-  display: flex;
-  justify-content: center;
+  text-align: center;
   margin-top: 16px;
   margin-bottom: 8px;
+  padding-bottom: 8px;
 }
 #video .video-responsive {
   height: 0;
