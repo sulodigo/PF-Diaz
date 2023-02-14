@@ -723,14 +723,6 @@ p {
   text-align: center;
 }
 
-#video {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px;
-  margin-bottom: 8px;
-  gap: 26px;
-}
-
 #newsletter .boton {
   width: 100px;
   height: 30px;
@@ -772,6 +764,27 @@ p {
 }
 #botonera ul li a:hover {
   color: rgb(0, 0, 139);
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+#video .video-responsive {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+#video .video-responsive iframe, #video .video-responsive embed {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
 form {
