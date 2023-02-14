@@ -35,7 +35,15 @@
             }
 }
 
-@mixin movil ($medida: 600px){
+#video{
+    display:flex;
+    justify-content: center;
+    margin-top: 16px;
+    margin-bottom: 8px;
+    gap: 6px;
+}
+
+@mixin movil ($medida: 480px){
     @media ($medida){
         @content;
        } 

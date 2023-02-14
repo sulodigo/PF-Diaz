@@ -10896,9 +10896,11 @@ p {
 }
 
 #video {
-  text-align: center;
+  display: flex;
+  justify-content: center;
   margin-top: 16px;
   margin-bottom: 8px;
+  gap: 6px;
 }
 
 #newsletter .boton {
@@ -11010,6 +11012,14 @@ form input {
   font-weight: 800;
   text-align: center;
   margin-top: 0px;
+}
+
+#video {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  gap: 6px;
 }
 
 main img {
