@@ -67,9 +67,9 @@ p{
     height: auto;
 }
 
-// .navbar-brand{
-//     text-align: left;
-// }
+.navbar-brand{     
+    text-align: left;
+}
 
 .textNave{
     color: $mainColor;
@@ -197,16 +197,7 @@ animation-timing-function: ease-in-out;
     top: 0px;
     left: 0px;
 }
-    
-//   .video-responsive {
-//         text-align: center;
-//         padding-bottom: 400px 56.25%; /* 16/9 ratio */
-//         padding-top: 30px; /* IE6 workaround*/
-//         height: 0;
-//         overflow: hidden;
-//     }
-
-
+   
 form{
     text-align: $textCenter;
     color: $mainColor;
