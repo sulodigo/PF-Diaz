@@ -61,13 +61,12 @@ main img{
     "A2";
 }
 
-//Grid pantalla "Discos" Responsive 600//
+//Grid pantalla "Discos" Responsive 480//
 
-@media (min-width:600px){
+@media (min-width:480px){
     #discos{
-        grid-template-columns: 2fr 2fr 1fr;
-        grid-template-rows: repeat(5, 8vw);
-        margin-bottom: -60px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(3, 8vw);
         grid-template-areas: 
         "MWS_ TBV ITR"
         "WALB TBV ITR"
@@ -149,9 +148,9 @@ main img{
     "foto6";
 }
 
-//Grid pantalla "Galería" Responsive 600//
+//Grid pantalla "Galería" Responsive 480//
 
-@media (min-width:600px){
+@media (min-width:480px){
     #galeria{
         grid-template-columns: 2fr 2fr 2fr;
         grid-template-rows: repeat(4,180px);
