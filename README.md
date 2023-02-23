@@ -12,3 +12,15 @@ Utilización específica:
 a) Flexbox + Grid + @keyframes + @media + animaciones WOW y Fresco + Bootstrap.
 b) Sass: nexting, partials, variables, extend y mixing. Css viejo borrado.
 c) SEO: etiquetas meta description y meta keywords. Page 404.
+
+Link Deploy Netifly
+
+https://velvety-cactus-e4c62a.netlify.app/
+
+Link GitHub Repositorio 
+
+https://github.com/sulodigo/PF-Diaz.git
+
+Link GitHub Pages
+
+https://sulodigo.github.io/PF-Diaz/
